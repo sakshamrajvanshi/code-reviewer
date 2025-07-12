@@ -1,0 +1,97 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #f0f0f0;
+  background-color: #1e1e1e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #7b8bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #a6b1ff;
+}
+
+/* Body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  display: flex;
+  place-items: center;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  border: 1px solid #444;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+  color: #eaeaea;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to right, #3a3a3a, #2a2a2a);
+  border-color: #646cff;
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid #646cff;
+  outline-offset: 2px;
+}
+
+/* Light Theme */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #212121;
+    background-color: #ffffff;
+  }
+
+  a {
+    color: #4c58f9;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background: linear-gradient(to right, #e7e7e7, #f9f9f9);
+    color: #1a1a1a;
+    border-color: #ccc;
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #ddd, #f0f0f0);
+    border-color: #4c58f9;
+  }
+}
